@@ -1,0 +1,38 @@
+# Development files
+.git
+.github
+.gitignore
+.eslintrc
+.prettierrc
+.editorconfig
+*.log
+
+# Source and test files
+src/
+test/
+__tests__/
+coverage/
+.nyc_output/
+
+# Build and dependency directories
+node_modules/
+dist/
+build/
+
+# Documentation and examples
+docs/
+examples/
+*.md
+!README.md
+
+# Configuration files
+tsconfig.json
+jest.config.js
+rollup.config.js
+webpack.config.js
+
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-*
+.DS_Store

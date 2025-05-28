@@ -1,0 +1,49 @@
+{
+  "name": "eslint-config-sanyezi",
+  "version": "1.0.0",
+  "description": "Shared ESLint config for our projects",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./base.d.ts",
+      "default": "./base.js"
+    },
+    "./react": {
+      "types": "./react.d.ts",
+      "default": "./react.js"
+    }
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">=8.0.0",
+    "@typescript-eslint/parser": ">=8.0.0",
+    "eslint": ">=9.0.0",
+    "globals": ">=13.0.0",
+    "eslint-plugin-simple-import-sort": ">=12.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.15.24",
+    "@typescript-eslint/eslint-plugin": "^8.33.0",
+    "@typescript-eslint/parser": "^8.33.0",
+    "eslint": "^9.27.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^16.2.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-react": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}
